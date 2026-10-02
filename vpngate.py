@@ -525,8 +525,8 @@ def build_hosts_text(data):
 
 # 自有 edgetunnel 配置: 必须通过环境变量提供, 不再内置任何第三方节点/UUID。
 # ⚠️ 未配置时仅生成 chains.txt (纯 SSTP 清单, 不经过第三方), 自动跳过 sub.txt / hosts.txt。
-EDT_UUID = os.environ.get("EDT_UUID", "")
-EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "")
+EDT_UUID = os.environ.get("EDT_UUID", "6f9fcabc-900d-4158-a8f1-0c16458b46da")
+EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "sjz.zhikuiyiyuan.de5.net")
 EDT_FINGERPRINT = os.environ.get("EDT_FINGERPRINT", "chrome")
 SUB_URL = os.environ.get("SUB_URL", f"{_PAGES_BASE}/sub.txt")
 
